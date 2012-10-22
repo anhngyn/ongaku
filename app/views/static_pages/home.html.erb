@@ -1,5 +1,4 @@
-<% provide(:title, 'Home') %>
-
+<div class="center hero-unit">
 <h1>Ongaku</h1>
 
 <body background="/images/bggreen.jpg" bgproperties="fixed"> 
@@ -7,6 +6,7 @@
 <table width=100% height=100%>
 <tr>
 <td style="text-align: center; vertical-align: middle;">
+
 <IMG SRC="/images/uc.gif" ALT="Oops!" WIDTH=256 HEIGHT=256>
 
 </td>
@@ -34,7 +34,11 @@
 <%= radio_button_tag(:agree, "No") %>
 <%= label_tag(:agree_no, "No") %>
 
+<%= link_to "Sign up now!", signup_path, class: "btn btn-large brn-primary" %>
 
+</div>
 
-<a href="http://ongaku-otaku.herokuapp.com/static_pages/home">Ongaku</a>
+<%= image_tag "/images/music.png", :alt => "Go Home",
+                          :id => "/static_pages/home",
+                          :class => 'nav_bar' %>
 
