@@ -1,13 +1,13 @@
 <div class="center hero-unit">
 <h1>Ongaku</h1>
 
-<body background="/images/bggreen.jpg" bgproperties="fixed"> 
+<body background="/images/musicbg.jpg" bgproperties="fixed"> 
 
 <table width=100% height=100%>
 <tr>
 <td style="text-align: center; vertical-align: middle;">
 
-<IMG SRC="/images/uc.gif" ALT="Oops!" WIDTH=256 HEIGHT=256>
+<IMG SRC="/images/bggreen.jpg" ALT="Oops!" WIDTH=256 HEIGHT=256>
 
 </td>
 </tr>
@@ -36,9 +36,15 @@
 
 <%= link_to "Sign up now!", signup_path, class: "btn btn-large brn-primary" %>
 
+<%= link_to "Moonlight's Path", moonlights_path_path %>
+
+<br>
+<%= link_to "I'll Walk With You (.pdf)", "/files/I'll_Walk_With_You.pdf" %>
+<%= link_to "I'll Walk With You (.wav)", "/music/I'll_Walk_With_You.wav" %>
+</br>
+
 </div>
 
 <%= image_tag "/images/music.png", :alt => "Go Home",
                           :id => "/static_pages/home",
                           :class => 'nav_bar' %>
-

@@ -11,4 +11,7 @@ class StaticPagesController < ApplicationController
   def contact
   end   
 
+  def moonlights_path
+  end
+
 end
