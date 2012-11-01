@@ -1,4 +1,4 @@
-
+<% if signed_in? %>
   <div class="center hero-unit">
     <h1>Ongaku</h1>
 
@@ -42,3 +42,40 @@
 <%= image_tag "/images/music.png", :alt => "Go Home",
                           :id => "/static_pages/home",
                           :class => 'nav_bar' %>
+
+<% else %>
+<div class="center hero-unit">
+    <h1>Ongaku</h1>
+
+    <body background="/images/musicbg.jpg" bgproperties="fixed"> 
+
+    <table width=100% height=100%>
+      <tr>
+        <td style="text-align: center; vertical-align: middle;">
+
+          <IMG SRC="/images/bggreen.jpg" ALT="Oops!" WIDTH=256 HEIGHT=256>
+
+        </td>
+    </tr>
+  </table> 
+
+
+<%= link_to "Sign up now!", signup_path, class: "btn btn-large brn-primary" %>
+
+
+<br>
+<%= link_to "I'll Walk With You (.pdf)", "/files/I'll_Walk_With_You.pdf" %>
+</br>
+<br>
+<%= link_to "midi test", "/music/LushofMagic.mid" %>
+</br>
+
+</div>
+
+
+<%= image_tag "/images/music.png", :alt => "Go Home",
+                          :id => "/static_pages/home",
+                          :class => 'nav_bar' %>
+
+<% end %> 
+
