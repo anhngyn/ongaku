@@ -1,14 +1,52 @@
-<% if signed_in? %>
-  <div class="center hero-unit">
-    <h1>Ongaku</h1>
 
-    <body background="/images/musicbg.jpg" bgproperties="fixed"> 
+
+  <div class="center hero-unit">
+	<h1>
+          Ongaku-Otaku 
+     </h1>
+
+  <head>
+    <title>
+     Toggle Button!
+    </title>
+    <link href="togglebutton.css" type="text/css" rel="stylesheet">
+  </head> 
+  <body id="public">
+    <div>
+      <!-- Body Header -->
+      <div id="header">
+        <p> Welcome to Ongaku-Otaku! This is a on-working site where we can share the music and anime needs in all of us!
+        </p>
+      </div>
+
+	<IMG SRC="/images/bggreen.jpg" ALT="Oops!" WIDTH=300 	HEIGHT=300>
+      
+      <!-- Body Content -->
+      <div id="content">
+        <input type="button" value="Hide" id="toggleButton" style="float:right;">
+        <h2>
+          What can we expect from this site?
+        </h2>
+        <p>
+		Ongaku-Otaku is in its preliminary stages. Some functional resources this site has as of now is a micropost, Twitter-like feed, and users who can sign in and out. Hoping to add a blog and a database where people can upload music. But right now, this site is more for personal use (like trying to learn Ruby on Rails and javascript because I'm still a noob).	
+    	   </p>
+      </div>
+      <!-- Footer -->
+      <div id="footer">
+       I hope to update this soon, once I have more time! ^^ --Anh
+      </div>
+     </div>
+    
+    <script src="libs/jquery-1.4.4.js"></script>
+    <script src="hideshow.js"></script>
+  </body>
+    
+<body background="/images/anime.jpg" bgproperties="fixed"> 
 
     <table width=100% height=100%>
+
       <tr>
         <td style="text-align: center; vertical-align: middle;">
-
-          <IMG SRC="/images/bggreen.jpg" ALT="Oops!" WIDTH=256 HEIGHT=256>
 
         </td>
     </tr>
@@ -27,7 +65,7 @@
 
 </div>
 
-
+<% if signed_in? %>
 <div class="row">
     <aside class="span4">
       <section>
@@ -42,44 +80,10 @@
       <%= render 'shared/feed' %>
     </div>
   </div> 
-
-<%= image_tag "/images/music.png", :alt => "Go Home",
-                          :id => "/static_pages/home",
-                          :class => 'nav_bar' %>
-
 <% else %>
-<div class="center hero-unit">
-    <h1>Ongaku</h1>
-
-    <body background="/images/musicbg.jpg" bgproperties="fixed"> 
-
-    <table width=100% height=100%>
-      <tr>
-        <td style="text-align: center; vertical-align: middle;">
-
-          <IMG SRC="/images/bggreen.jpg" ALT="Oops!" WIDTH=256 HEIGHT=256>
-
-        </td>
-    </tr>
-  </table> 
-
-
-<%= link_to "Sign up now!", signup_path, class: "btn btn-large brn-primary" %>
-
-
-<br>
-<%= link_to "I'll Walk With You (.pdf)", "/files/I'll_Walk_With_You.pdf" %>
-</br>
-<br>
-<%= link_to "midi test", "/music/LushofMagic.mid" %>
-</br>
-
-</div>
-
-
-<%= image_tag "/images/music.png", :alt => "Go Home",
-                          :id => "/static_pages/home",
-                          :class => 'nav_bar' %>
-
 <% end %> 
 
+
+<%= image_tag "/images/music.png", :alt => "Go Home",
+                          :id => "/static_pages/home",
+                          :class => 'nav_bar' %>
