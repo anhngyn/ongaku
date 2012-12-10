@@ -14,6 +14,9 @@ Ongaku::Application.routes.draw do
   match '/about',           to: 'static_pages#about'
   match '/contact',         to: 'static_pages#contact'  
   match '/moonlights_path', to: 'static_pages#moonlights_path'
+  match '/twilight_witch',  to: 'static_pages#twilight_witch'
+  match '/sketch_angel',    to: 'static_pages#sketch_angel'
+  match '/miscellaneous',   to: 'static_pages#miscellaneous'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -18,4 +18,13 @@ class StaticPagesController < ApplicationController
   def moonlights_path
   end
 
+  def twilight_witch
+  end
+	
+  def sketch_angel
+  end 
+	
+  def miscellaneous
+  end
+
 end
